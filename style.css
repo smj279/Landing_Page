@@ -9,12 +9,15 @@
      line-height: 1.6;
  }
  
+
+ /* Navbar */
  .navbar{
      background-color: white;
      padding: 15px 50px;
      border-bottom: 1px solid #eee;
      position: fixed;
      width: 100%;
+   
      top: 0;
  }
  
@@ -80,6 +83,7 @@
  .btn:hover {
      background-color: #024ea0;   
  }
+
 
 
  /* Banner  */
@@ -252,63 +256,335 @@
     background-color: #f9fbfd;
     font-family: Arial, sans-serif;
     margin-top: 170px;
-}
-
-.stats-header {
+  }
+  
+  .stats-header {
     flex: 1;
     max-width: 400px;
     text-align: left;
-}
-
-.stats-header h2 {
-    font-size: 31px;
+    margin-right: 220px;
+  }
+  
+  .stats-header h2 {
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
-}
-
-.stats-header p {
+  }
+  
+  .stats-header p {
     font-size: 15px;
     color: #777;
     margin-bottom: 30px;
-}
-
-.stats-container {
+  }
+  
+  .stats-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     flex: 2;
     justify-content: space-between;
-}
-
-.stats-item {
+  }
+  
+  .stats-item {
     display: flex;
-    flex-direction: row; 
-    align-items: flex-start; 
+    align-items: center;
     width: calc(50% - 10px);
     box-sizing: border-box;
-}
-
-.stats-item img {
-    width: 50px;
+  }
+  
+  .stats-item img {
+    width: 60px;
     height: 50px;
-    margin-right: 15px; 
-}
-
-.stats-item div {
+    margin-right: 17px;
+  }
+  
+  .stats-text {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-}
-
-.stats-item h3 {
-    font-size: 20px;
+    flex-direction: column;
+  }
+  
+  .stats-text h3 {
+    font-size: 23px;
     color: #333;
-    margin: 0; 
+    margin-bottom: -7px;
+  }
+  
+  .stats-text p {
+    font-size: 13px;
+    color: #666;
+    margin: 5px 0 0;
+  }
+  
+
+
+
+  /* Blockchain Future */
+  .future {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: white;
+    margin-top: 180px;
+  }
+  
+  .blockchain-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .blockchain-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .blockchain-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 50px;
+  }
+  
+  .future-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+  }
+  
+  .future-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    transition: transform 0.3s ease;
+  }
+  
+  .future-card:hover {
+    transform: translateY(-5px);
+    background-color: #dfddd7;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .description-container {
+    padding: 15px;
+    text-align: center;
+    margin-top: 17px; 
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2b9348;
+    text-decoration: none;
+  }
+  
+  .read-more span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2b9348;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+
+  /* Contact Us */
+.contact {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 80px;
 }
 
-.stats-item p {
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px; 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
+
+.image-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #115205;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-field textarea {
+    resize: vertical;
+}
+
+.send-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #2e6b31;
+}
+
+
+
+
+/* Footer */
+  .footer {
+    background-color: #1c1e21;
+    color: #c9c9c9;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #c9c9c9;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons img {
+    width: 21px;
+    height: 21px;
+    margin-right: 19px;
+  }
+  
+  .newsletter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #444;
+    border-radius: 3px 0 0 3px;
+    background-color: #2b2e33;
+    color: white;
+    outline: none;
+    width: 200px;
+  }
+  
+  .newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: #444;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #555;
+  }
+  
+
+
+/* Mobile Responsive */
